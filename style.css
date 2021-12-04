@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: rgb(251,176,63);
+    background: radial-gradient(circle, rgba(251,176,63,1) 0%, rgba(252,110,43,1) 64%);
+    height: 100vh;
+}
+
+.container{
+    max-width: 1220px;
+}
+.custom-shape-divider-top-1638608628 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+
+.custom-shape-divider-top-1638608628 svg {
+    position: relative;
+    display: block;
+    width: calc(175% + 1.3px);
+    height: 254px;
+
+    animation: wave 4s  ease-in-out;
+}
+
+@keyframes wave{
+    from{ width: calc(111% + 1.3px);}
+    to{ width: calc(175% + 1.3px);}
+
+}
+
+.custom-shape-divider-top-1638608628 .shape-fill {
+    fill: #FFECEC;
+}
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+}
+.card{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 25px 25px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    transition: all 0.3s ease 0s;
+    justify-content: center;
+}
+
+.title-card{
+    color: #dfdfdf;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    transform: translateY(-50%);
+    font-size: 40px;
+}
+.text-card{
+    width: 100%;
+    text-align: center;
+    color: #dddddd;
+    transform: translateY(-50%);
+    font-size: 25px;
+}
+.button-card{
+
+}
+.card::before{
+    content: '';
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 80px;
+    background-color: #e91b1b;
+
+}
